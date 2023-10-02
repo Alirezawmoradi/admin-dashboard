@@ -2,12 +2,25 @@ import Login from "./features/identity/components/login.jsx";
 import Register from "./features/identity/components/register.jsx";
 import {RouterProvider} from "react-router-dom";
 import router from "./router.jsx";
+import "./core/i18n.jsx";
+import {useAppContext} from "./contexts/app-context.jsx";
+import {useEffect} from "react";
 
 function App() {
-
-  return (
-   <RouterProvider router={router}/>
-  )
+    const {theme} = useAppContext();
+    useEffect(() => {
+        const head = document.head;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = `/css/${theme}.css`;
+        head.appendChild(link);
+        return () => {
+            head.removeChild(link)
+        }
+    }, [theme]);
+    return (
+        <RouterProvider router={router}/>
+    )
 }
 
 export default App

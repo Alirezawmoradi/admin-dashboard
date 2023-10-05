@@ -54,5 +54,8 @@
   "categoryList": {
     "DeleteIsNotPossible": "حذف این دسته امکان پذیر نیست",
     "DuplicateCategory": "اسم دسته تکراری است"
+  },
+  "footer": {
+    "classbon": "کلاسبن"
   }
 }

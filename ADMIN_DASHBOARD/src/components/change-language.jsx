@@ -18,6 +18,9 @@ const ChangeLanguage = () => {
             document.removeEventListener('mousedown', checkIfClickOutside);
         }
     }, [show])
+    useEffect(() => {
+        setShow(false)
+    }, [language]);
     return (
         <div className='dropdown'>
             <a className='nav-flag dropdown-toggle' onClick={() => setShow(true)}>

@@ -1,7 +1,7 @@
 import logo from '@assets/images/logo.svg';
 import {Link, useActionData, useNavigate, useNavigation, useRouteError, useSubmit} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import {httpService} from "../../../core/http-service.jsx";
+import {httpService} from "@core/http-service.jsx";
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 
@@ -124,7 +124,7 @@ const Register = () => {
                                     routeErrors && (
                                         <div className='alert alert-danger text-danger p-2 mt-3'>
                                             {routeErrors.response?.data.map(error =>
-                                                <p className='mb-0'>{error.description}</p>
+                                                <p className='mb-0'>{t(`register.validation.${error.code}`)}</p>
                                             )
                                             }
                                         </div>

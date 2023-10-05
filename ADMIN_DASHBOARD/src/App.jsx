@@ -8,6 +8,7 @@ import {useEffect} from "react";
 
 function App() {
     const {theme} = useAppContext();
+    const {language}=useAppContext();
     useEffect(() => {
         const head = document.head;
         const link = document.createElement('link');

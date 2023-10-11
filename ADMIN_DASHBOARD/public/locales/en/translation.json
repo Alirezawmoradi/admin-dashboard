@@ -57,5 +57,8 @@
   },
   "footer": {
     "classbon": "classbon"
+  },
+  "coursesLayout": {
+    "addButton": "add new course"
   }
 }

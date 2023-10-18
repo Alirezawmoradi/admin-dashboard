@@ -59,6 +59,7 @@
     "classbon": "classbon"
   },
   "coursesLayout": {
-    "addButton": "add new course"
+    "addButton": "add new course",
+    "addNewCategories": "add new categories"
   }
 }

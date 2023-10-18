@@ -59,6 +59,7 @@
     "classbon": "کلاسبن"
   },
   "coursesLayout": {
-    "addButton": "افزودن دوره جدید"
+    "addButton": "افزودن دوره جدید",
+    "addNewCategories": "افزودن دسته جدید"
   }
 }

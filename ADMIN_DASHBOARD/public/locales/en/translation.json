@@ -61,5 +61,14 @@
   "coursesLayout": {
     "addButton": "add new course",
     "addNewCategories": "add new categories"
-  }
+  },
+  "loaderString": {
+    "loading": "updating information ..."
+  },
+  "toastNotification": {
+    "deletePending": "Deleting...",
+    "updatePending": "Updating...",
+    "success": "Process successfully done."
+  },
+  "logout":"log out"
 }

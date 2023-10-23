@@ -17,7 +17,7 @@ const Courses = () => {
                         {t('coursesLayout.addButton')}
                     </a>
                 </div>
-                <Suspense fallback={<p className='text-info'>در حال دریافت اطلاعات ...</p>}>
+                <Suspense fallback={<p className='text-info'>{t('loaderString.loading')}</p>}>
                     <Await resolve={data.courses}>
                         {(loadedCourses) => <CourseList courses={loadedCourses}/>}
                     </Await>

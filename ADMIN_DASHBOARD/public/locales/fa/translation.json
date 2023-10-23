@@ -61,5 +61,14 @@
   "coursesLayout": {
     "addButton": "افزودن دوره جدید",
     "addNewCategories": "افزودن دسته جدید"
-  }
+  },
+  "loaderString": {
+    "loading": "در حال دریافت اطلاعات ..."
+  },
+  "toastNotification": {
+    "deletePending": "در حال حذف ...",
+    "updatePending": "در حال اعمال تغییرات ...",
+    "success": "عملیات با موفقیت انجام شد."
+  },
+  "logout":"خارج شوید"
 }

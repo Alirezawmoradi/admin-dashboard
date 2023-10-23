@@ -2,11 +2,13 @@ import {httpInterceptedService} from "@core/http-service.jsx";
 import {Await, defer, useLoaderData} from "react-router-dom";
 import {Suspense} from "react";
 import CourseDetailsPages from "./course-details-pages.jsx";
+import {useTranslation} from "react-i18next";
 
 const CourseDetails = () => {
     const data = useLoaderData();
+    const {t}=useTranslation();
     return (
-            <Suspense fallback={<p className='text-info'>در حال دریافت اطلاعات ...</p>}>
+            <Suspense fallback={<p className='text-info'>{t('loaderString.loading')}</p>}>
                 <Await resolve={data.details}>
                     {(courseDetails) => <CourseDetailsPages details={courseDetails}/>}
                 </Await>

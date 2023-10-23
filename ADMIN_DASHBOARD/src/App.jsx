@@ -1,14 +1,13 @@
-import Login from "./features/identity/components/login.jsx";
-import Register from "./features/identity/components/register.jsx";
 import {RouterProvider} from "react-router-dom";
 import router from "./router.jsx";
 import "./core/i18n.jsx";
 import {useAppContext} from "./contexts/app-context.jsx";
 import {useEffect} from "react";
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer} from "react-toastify";
 
 function App() {
     const {theme} = useAppContext();
-    const {language}=useAppContext();
     useEffect(() => {
         const head = document.head;
         const link = document.createElement('link');
@@ -20,7 +19,10 @@ function App() {
         }
     }, [theme]);
     return (
-        <RouterProvider router={router}/>
+        <>
+            <RouterProvider router={router}/>
+            <ToastContainer rtl/>
+        </>
     )
 }
 
